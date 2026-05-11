@@ -114,6 +114,37 @@ npm run dev
 
 ---
 
+## Configuração do Banco de Dados
+
+Crie um banco MySQL chamado:
+
+```sql
+biblioteca
+```
+
+Configure as credenciais no arquivo `.env`:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=biblioteca
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Importe o arquivo SQL localizado em:
+
+```text
+database/biblioteca.sql
+```
+
+Após isso, execute:
+
+```bash
+php artisan migrate
+```
+
 ## Autor
 
 Lucas Oliveira
