@@ -145,6 +145,65 @@ Após isso, execute:
 php artisan migrate
 ```
 
+## Criando um Novo Administrador
+
+Para criar um novo usuário administrador, utilize o Tinker do Laravel:
+
+```bash
+php artisan tinker
+```
+Depois importe o model User:
+
+```php
+use App\Models\User;
+```
+
+Depois execute:
+
+```php
+User::create([
+    'name' => 'Admin',
+    'email' => 'admin@gmail.com',
+    'password' => bcrypt('admin123')
+]);
+--- Exemplo---
+```
+
+---
+
+## Rotas do Sistema
+
+### Página Inicial
+```text
+http://biblioteca.test/
+```
+
+### Login
+```text
+http://biblioteca.test/login
+```
+
+### Painel Administrativo
+```text
+http://biblioteca.test/painel
+```
+
+---
+
+## Usuários de Demonstração
+
+### Administrador
+```text
+Login: admin@gmail.com
+Senha: admin123
+```
+
+### Usuário
+```text
+Login: lucas@admin.com
+Senha: admin123
+```
+
 ## Autor
 
 Lucas Oliveira
