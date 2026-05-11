@@ -198,7 +198,7 @@ Login: admin@gmail.com
 Senha: admin123
 ```
 
-### Usuário
+### Administrador
 ```text
 Login: lucas@admin.com
 Senha: admin123
